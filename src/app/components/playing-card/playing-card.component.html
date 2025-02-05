@@ -1,0 +1,25 @@
+<div id="card">
+    <div id="inside" [style.background-color]="backgroundColor()">
+        <header>
+            <div class="left">
+            <div id="name">{{country().name}}</div>
+            </div>
+            <div class="right">
+                <div id="continent">{{country().continent}}</div>
+                <img class="continent icon" [src]= 'continentIcon()' alt="Continent Icon"/>
+            </div>
+        </header>
+        <figure id="flag">
+            <img [src]="country().image" alt="Flag"/>
+            <figcaption>{{country().figureCaption}}</figcaption>
+        </figure>
+        <div class="description">
+            <ul class="list">
+                <li><span class="label">Capital: </span> <span class="value">{{country().capital}}</span></li>
+                <li><span class="label">Language: </span> <span class="value">{{country().language}}</span></li>
+                <li><span class="label">National dish: </span> <span class="value">{{country().nationalDish}}</span></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
